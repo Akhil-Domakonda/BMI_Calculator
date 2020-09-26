@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <h1><span> BMI</span> <br> Calculator <i class="fas fa-calculator"></i></h1>
+    <p>Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women.</p>
+    
+    <div id="container">
+        <h2>Calculate your BMI here</h2>
+        <div id="form">
+            <label>Choose a system:</label>
+        
+            <label for="si">SI</label>
+            <input type="radio" name="System" id="si" required>
+            <label for="metric">Metric</label>
+            <input type="radio" name="System" id="metric" required>
+    
+            <br>
+    
+            <label for="weight">WEIGHT:</label>
+            <input type="text" name="Kgs" id="weight" placeholder="Enter your weight" required><span id="weightDisplay"></span>
+            <br>
+            <label for="height">HEIGHT:</label>
+            <input type="text" name="meters" id="height" placeholder="Enter your height" required><span id="heightDisplay"></span>
+            
+            <br>
+    
+            <input type="submit" value="Caluclate BMI" id="calculate"> 
+            <br>
+            <span id="message"></span>  
+        </div>
+        <hr>
+        <h2>BMI Categories</h2>
+        <table border="1">
+            <tbody>
+                <tr>
+                    <th>BMI</th>
+                    <th>Category</th>
+                </tr>
+                <tr>
+                    <td>less than or equal to 18.5</td>
+                    <td>Underweight</td>
+                </tr>
+                <tr>
+                    <td>18.5-24.9</td>
+                    <td>Normal Weight</td>
+                </tr>
+                <tr>
+                    <td>25-29.9</td>
+                    <td>Overweight</td>
+                </tr>
+                <td>30 or greater</td>
+                <td>Obesity</td>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
